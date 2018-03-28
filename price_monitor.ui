@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>价格监控软件</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>941</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::DoubleClicked</set>
+   </property>
+   <column>
+    <property name="text">
+     <string>地址</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>商家</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>目标价格</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>实际价格</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="beginBtn">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>460</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stopBtn">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>500</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>421</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>新增商品</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>网址</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="urlEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目标价格</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="priceEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>91</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>新增</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>beginBtn</zorder>
+  <zorder>stopBtn</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>tableWidget</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>beginBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>start_monitor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>94</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>add_monitor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>383</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>519</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>itemChanged(QTableWidgetItem*)</signal>
+   <receiver>Form</receiver>
+   <slot>save_price()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>start_monitor()</slot>
+  <slot>add_monitor()</slot>
+  <slot>save_price()</slot>
+ </slots>
+</ui>

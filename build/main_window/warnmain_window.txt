@@ -1,0 +1,23 @@
+missing module named org - imported by pickle, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named _winreg - imported by platform, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named java - imported by platform, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named vms_lib - imported by platform, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named winreg - imported by platform, mimetypes, urllib.request, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named 'org.python' - imported by copy, xml.sax, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named nt - imported by os, ntpath, shutil, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named msvcrt - imported by subprocess, getpass, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named _winapi - imported by subprocess, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named _dummy_threading - imported by dummy_threading, /Users/chenpeijun/PycharmProjects/spider/jd/main_window.py
+missing module named _gdbm - imported by dbm.gnu
+missing module named iconv_codec - imported by bs4.dammit
+missing module named cchardet - imported by bs4.dammit
+missing module named StringIO - imported by six
+missing module named html5lib.treebuilders._base - imported by html5lib.treebuilders, bs4.builder._html5lib
+runtime module named six.moves - imported by html5lib._inputstream, html5lib.filters.sanitizer
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib'
+missing module named 'genshi.core' - imported by html5lib.treewalkers.genshi
+missing module named genshi - imported by html5lib.treewalkers.genshi
+missing module named datrie - imported by html5lib._trie.datrie

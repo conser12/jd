@@ -1,0 +1,3 @@
+([('main_window',
+   '/Users/chenpeijun/PycharmProjects/spider/jd/dist/main_window',
+   'EXECUTABLE')],)
